@@ -8,7 +8,8 @@ def load_library(file_path)
   }
   YAML.load_file(file_path).each do |definition, array|
     array.each do |key, value|
-      
+      binding.pr
+    end
 binding.pry
   end
 end
