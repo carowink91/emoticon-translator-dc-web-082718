@@ -32,6 +32,7 @@ def get_english_meaning (file_path, emoticon)
 
   if library["get_meaning"].include?(emoticon)
     answer = library["get_meaning"][emoticon]
-    binding.pry
+  else
+    answer = "Sorry, that emoticon was not found"
   end
 end
