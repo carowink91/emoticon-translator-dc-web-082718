@@ -22,6 +22,7 @@ def get_japanese_emoticon (file_path, emoticon)
   elsif library["get_emoticon"].include?(emoticon) == false
     answer = "Sorry, that emoticon was not found"
   end
+  answer
 end
 
 def get_english_meaning
