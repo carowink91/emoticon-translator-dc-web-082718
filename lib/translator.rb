@@ -8,7 +8,7 @@ def load_library(file_path)
     english = array[0]
     japanese = array[1]
     library["translate_to_japanese"][english] = japanese
-    library["translate_to_english"][japanese] = meaning
+    library["get_meaning"][japanese] = meaning
   end
   library
 end
