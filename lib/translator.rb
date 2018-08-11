@@ -11,8 +11,9 @@ def load_library(file_path)
     array[1] = japanese_emoticon
     dictionary["get_emoticon"][western_emoticon] = japanese_emoticon
     dictionary["get_meaning"][japanese_emoticon] = western_emoticon
-      binding.pry
   end
+  dictionary
+  binding.pry
 end
 
 def get_japanese_emoticon
