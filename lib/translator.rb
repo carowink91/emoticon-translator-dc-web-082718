@@ -3,8 +3,7 @@ require 'pry'
 
 def load_library(file_path)
   dictionary = {
-    "get_meaning" => {},
-    "get_emoticon" => {}
+    "get_meaning" => {}, "get_emoticon" => {}
   }
   YAML.load_file(file_path).each do |definition, array|
     array[0] = western_emoticon
