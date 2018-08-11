@@ -30,4 +30,7 @@ end
 def get_english_meaning (file_path, emoticon)
   library = load_library(file_path)
   binding.pry
+  if library["get_meaning"].include?(emoticon)
+    binding.pry
+  end
 end
