@@ -5,6 +5,7 @@ def load_library(file_path)
   library = {"translate_to_english" => {}, "translate_to_japanese" => {}}
 
   YAML.load_file(file_path).each do |meaning, array|
+    binding.pry
     array = [english, japanese]
     library["translate_to_japanese"][english] = japanese
     library["translate_to_english"][japanese] = meaning
