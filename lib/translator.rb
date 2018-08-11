@@ -9,7 +9,8 @@ def load_library(file_path)
   YAML.load_file(file_path).each do |definition, array|
     array[0] = western_emoticon
     array[1] = japanese_emoticon
-    dictionary["search_for"]
+    dictionary["get_emoticon"][western_emoticon] = japanese_emoticon
+    dictionary["get_meaning"][japanese_emoticon] = western_emoticon
       binding.pry
   end
 end
