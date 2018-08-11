@@ -3,13 +3,13 @@ require 'pry'
 
 def load_library(file_path)
   dictionary = {
-    "search_for_def" => {},
-    "search_for_emoticon" => {}
+    "get_meaning" => {},
+    "get_emoticon" => {}
   }
   YAML.load_file(file_path).each do |definition, array|
     array[0] = western_emoticon
     array[1] = japanese_emoticon
-    dictionary
+    dictionary["search_for"]
       binding.pry
   end
 end
