@@ -11,7 +11,6 @@ def load_library(file_path)
     library["translate_to_english"][japanese] = meaning
   end
   library
-  binding.pry
 end
 
 def get_japanese_emoticon
